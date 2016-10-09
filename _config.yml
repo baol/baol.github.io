@@ -9,7 +9,7 @@ github_username:  baol
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: ed
 gems:
   - jekyll-feed
 exclude:
