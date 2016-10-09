@@ -1,17 +1,40 @@
 title: Baol's little place on the Internet
-email: baol@protonmail.ch
-description: > # this means to ignore newlines until "baseurl:"
-   Complex software needs no complicated solutions.
+email: baol at protonmail dot ch
+tagline: Complex software needs no complicated solutions.
+description: Complex software needs no complicated solutions.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "100allora.it" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ieghermaister
 github_username:  baol
 
-# Build settings
+# Permalinks
+
+permalink: pretty
+permalink: /:title/
+
+# Set encoding to UTF-8
+encoding: utf-8
+
+# Collections for texts
+collections:
+  texts:
+    output: true
+
+# Markdown specs
 markdown: kramdown
-theme: ed
-gems:
-  - jekyll-feed
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 exclude:
   - Gemfile
   - Gemfile.lock
+  - optional
+  - vendor
+  - CNAME
