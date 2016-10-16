@@ -126,7 +126,10 @@ h1 {
 }
 
 h1.post-title {
-	font-size: 1.4rem;
+    font-size: 1.9rem;
+    
+    border-bottom: 1px dotted gray;
+    margin-bottom: 25px;
 }
 
 h2 {
