@@ -5,7 +5,7 @@ date:   2016-10-16 14:14:14 +0200
 categories: home-automation mqtt
 ---
 
-# New to docker?
+## New to docker?
 
 Me too!!!
 
@@ -164,5 +164,3 @@ authenticate users with certificates instead of passwords.
 
 * Instead of writing pages like this I could just have written a much
   shorter `Dockerfile` to do all the required steps!
-
-
