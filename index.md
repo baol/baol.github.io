@@ -3,21 +3,21 @@ layout: page
 ---
 
 Hi,
-I'm a free software developer and activist interested in complex algorithms, operations research, and security. I was also an early member and co-founder of the [LILiK](http://www.lilik.it) free software lab, but this happened in the previous millennium.
+I'm a software developer interested in free software, complex algorithms, operations research, and security. I co-founded the LILiK free software lab in Florence, Italy, but this happened in the previous millennium.
 
-You can take a look at my research on [Scholar](https://scholar.google.de/citations?user=rc-liiQAAAAJ&hl=en) or find my latest project *Z-Wave fun with an Hack-RF* [here](https://github.com/baol/waving-z).
+You can take a look at my research on [Scholar](https://scholar.google.de/citations?user=rc-liiQAAAAJ&hl=en), and some of my unfinished personal projects on [GitHub](https://github.com/baol)
 
-I should also mention some older projects: a fast and flicker free PDF presentaion visualizer [PDFCube](https://github.com/baol/pdfcube) and a framework for metaheuristics algorithms that I used in my paper on VRP and was also used to develop the [Routist](http://www.routist.com) fleet optimization engine when I founded the KKT startup a few years ago, [METSlib](https://github.com/coin-or/metslib).
+In particular:
+- [METSlib](https://github.com/coin-or/metslib) a framework to help solving big combinatorial optimization problems that I used in a paper on VRP and was also used to develop the [Routist](http://www.routist.com) fleet optimization engine when I founded the KKT startup a few years ago, 
+- [Waving-z](https://github.com/baol/waving-z) a software radio modulator and demodulator for z-wave signals,
+- [PDFCube](https://github.com/baol/pdfcube) a quick hack to display pdf presentations fast and with a 3d effect that does not suck,
+- [Rose](https://github.com/baol/rose) a personalizable tile generator for 3D printers and infinite asymmetric Penrose tiling,
 
-I have developed some expertise in location optimization and location algorithms and am now working [here](http://here.com).
+I have developed some expertise in location optimization and location algorithms at scale and am now working [here](http://here.com) as Software Architect (practically more like a Platform Staff Engineer).
 
-I also write about what I do from time to time:
-
+Random articles:
 {% for item in site.texts do %}
   * [{{ item.title }}]({{ site.baseurl }}{{ item.url }})
 {% endfor %}
-
-Most receltly I'm starting to sharpen my [cooking and baking skills](cooking.md)
-
 
 > [Mirko Maischberger](https://www.linkedin.com/in/maischberger)
