@@ -12,6 +12,7 @@ In particular:
 - [Waving-z](https://github.com/baol/waving-z) a software radio modulator and demodulator for z-wave signals,
 - [PDFCube](https://github.com/baol/pdfcube) a quick hack to display pdf presentations fast and with a 3d effect that does not suck,
 - [Rose](https://github.com/baol/rose) a personalizable tile generator for 3D printers and infinite asymmetric Penrose tiling,
+- [Chebyshev](https://github.com/baol/chebyshev) a walkthrough on how to get a Chebychev polynomial approximation of any function in a range.
 
 I have developed some expertise in location optimization and location algorithms at scale and am now working [here](http://here.com) as Software Architect (practically more like a Platform Staff Engineer).
 
