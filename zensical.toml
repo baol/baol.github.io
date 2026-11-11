@@ -3,8 +3,8 @@
 # /alien-attack/ (baol/alien-attack). Don't create pages at those paths.
 
 [project]
-site_name = "100allora"
-site_description = "Mirko Maischberger: operations research, location algorithms and free software."
+site_name = "Baol's little place on the Internet"
+site_description = "Complex software needs no complicated solutions."
 site_author = "Mirko Maischberger"
 site_url = "https://100allora.it/"
 repo_url = "https://github.com/baol/baol.github.io"

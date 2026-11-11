@@ -1,12 +1,15 @@
 ---
 title: Mirko Maischberger
-description: Operations research, location algorithms and free software.
+description: Complex software needs no complicated solutions.
 hide:
   - navigation
   - toc
 ---
 
 # Hi, I'm Mirko
+
+*Complex software needs no complicated solutions.*
+{ .tagline }
 
 I'm a software developer interested in free software, complex algorithms,
 operations research and security. I co-founded the LILiK free software lab in
