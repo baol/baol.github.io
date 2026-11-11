@@ -1,0 +1,32 @@
+name: Links
+on:
+  push:
+    branches: [master]
+  pull_request:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays: external links rot without any commit
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lychee:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - run: pip install .
+      - run: zensical build --clean
+      - uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: lychee-${{ github.sha }}
+          restore-keys: lychee-
+      - uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          lycheeVersion: v0.24.2 # lychee.toml uses this version's option names
+          args: --config lychee.toml --cache --max-cache-age 1d --root-dir "$PWD/site" site
+          fail: true

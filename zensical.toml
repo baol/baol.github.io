@@ -1,0 +1,52 @@
+# 100allora.it, built with Zensical (https://zensical.org).
+# Other repositories publish under this domain too: /gg/ (baol/gg) and
+# /alien-attack/ (baol/alien-attack). Don't create pages at those paths.
+
+[project]
+site_name = "100allora"
+site_description = "Mirko Maischberger: operations research, location algorithms and free software."
+site_author = "Mirko Maischberger"
+site_url = "https://100allora.it/"
+repo_url = "https://github.com/baol/baol.github.io"
+repo_name = "baol/baol.github.io"
+copyright = "© Mirko Maischberger"
+extra_css = ["stylesheets/extra.css"]
+
+nav = [
+  { "Home" = "index.md" },
+  { "PDFCube" = "pdfcube/index.md" },
+  { "Notes" = [
+    "texts/index.md",
+    { "Z-Wave traffic monitoring for 10€ (2016)" = "texts/A-tale-on-Z-Wave.md" },
+  ] },
+]
+
+[project.theme]
+name = "material"
+logo = "images/100allora.png"
+favicon = "images/favicon.png"
+language = "en"
+features = ["navigation.tabs", "content.code.copy"]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "white"
+accent = "deep orange"
+toggle = { icon = "material/weather-night", name = "Dark mode" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "black"
+accent = "amber"
+toggle = { icon = "material/weather-sunny", name = "Light mode" }
+
+[project.markdown_extensions."attr_list"]
+[project.markdown_extensions."md_in_html"]
+[project.markdown_extensions."footnotes"]
+[project.markdown_extensions."toc"]
+permalink = true
+[project.markdown_extensions."pymdownx.highlight"]
+pygments_lang_class = true
+[project.markdown_extensions."pymdownx.superfences"]
