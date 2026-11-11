@@ -1,0 +1,18 @@
+/* Project cards: every screenshot is cropped to the same 16:10 frame. */
+.projects.grid.cards img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 0.2rem;
+}
+
+/* The PDFCube showcase video fills the content column. */
+.showcase-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.2rem;
+  background: #000;
+}

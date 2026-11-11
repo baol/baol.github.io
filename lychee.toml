@@ -1,0 +1,18 @@
+# Link check for the built site (see .github/workflows/links.yml).
+# Run locally after `uv run zensical build`:  lychee site
+
+include_fragments = "anchor-only"
+max_retries = 3
+timeout = 20
+accept = ["200..=299", "429"]
+
+exclude = [
+  # This site's own pages as absolute URLs (canonical tags, sitemap). They are
+  # checked through relative links, and new pages 404 until deployed.
+  # /gg/ and /alien-attack/ belong to other repositories and stay checked.
+  '^https://100allora\.it/($|texts/|pdfcube/|images/|media/|sitemap)',
+  # Scholar answers bots with 403 or a captcha.
+  '^https://scholar\.google\.',
+  # Assets of the Zensical theme itself.
+  '^https://fonts\.(googleapis|gstatic)\.com',
+]
